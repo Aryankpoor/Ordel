@@ -1,121 +1,151 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="my new portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Delivery Tracker by Aryan Kapoor</title>
-    <link rel="icon" href="https://i.ibb.co/S7Sq8jw/gamer.png" type="image/png">
-    <script src="https://animejs.com/lib/anime.min.js"></script>
-    <script src="script.js"></script> 
-    <!--  Bootstrap css file  -->
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delivery Tracker By Aryan Kapoor</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
+<body id="top">
 
-<body>
-<div class="container">
-  <div class="iphone">
-    <div class="header">
-      <div class="order-summary">
-        <div class="order-status">Arriving date</div>
-        <div class="order-date">
-          19 April, 2024
-        </div>
-        <div class="order-day">
-          Friday
-        </div>
-      </div>
-      <div class="action-btn">
-        <div class="back-btn"><i class="far fa-long-arrow-left"></i></div>
-      </div>
-    </div>
-    <div class="hero-img-container">
-      <div class="triangle1"></div>
-      <div class="arc"></div>
-      <div class="pattern"></div>
-      <img src="https://drive.google.com/uc?id=15iXUI6DkRr5Zcp0yH5uF2U47ycr-WzUY" class="hero-img">
-    </div>
-    <div class="order-status-container">
-     <div class="status-item first">
-       <div class="status-circle"></div>
-       <div class="status-text">
-         today
-       </div>
-      </div>
-      <div class="status-item second">
-       <div class="status-circle"></div>
-       <div class="status-text">
-         Shipped
-       </div>
-      </div>
-      <div class="status-item">
-        <div class="status-circle"></div>
-        <div class="status-text green">
-        <span>Out</span><span>for delivery</span>
-        </div>
-      </div>
-      <div class="status-item">
-        <div class="status-circle"></div>
-       <div class="status-text green">
-         <span>Ariving</span>
-         <span>03&nbsp;-&nbsp;21</span>
-       </div>
-      </div>
-      </div>
-    <div class="order-details-container">
-      <div class="odc-header">
-      <div class="cta-text">See your product details</div>
-      <div class="cta-button-container">
-        <button class="cta-button">View</button>
-      </div>
-      </div>
-      <div class="odc-wrapper">
-      <div class="odc-header-line">
-        Your order details
-      </div>
-      <div class="odc-header-details">
-        Your product details (order 840-904-9430)
-      </div>
-      <div class="product-container">
-        <div class="product">
-          <div class="product-photo">
-            <img src="https://s3.eu-central-1.amazonaws.com/sneakerjagers.com/products/396x396/92074.jpg" class="img-photo">
-          </div>
-          <div class="product-desc">
-            <span>Realme Narzo 50A PRIME 128gb ROM 4gb RAM</span>
-            <span>12000 INR</span>
-          </div>
-        </div><div class="product">
-          <div class="product-photo">
-            <img src="https://s3.eu-central-1.amazonaws.com/sneakerjagers.com/products/396x396/77674.jpg" class="img-photo">
-          </div>
-          <div class="product-desc">
-            <span>Puma Mens black athleisure</span>
-            <span>1500 INR</span>
-          </div>
-        </div>
-      </div>
-      <a href="order-cancellationReqtoken12.netlify.app"><div class="cancellation">
-        Cancellation Unavailable
-        </div></a>
-      
-      <div class="shipping-desc">Your Shipping Address</div>
-      
-      <div class="shipping-address">
-        NRI society<br>
-        DELHI<br>
-        201305<br>
-        GAUTAM BUDH NAGAR, GHAZIABAD
-      </div>
-      </div>
-    </div>
-  </div>
+  
+    <!-- - Header  Section-->
   
 
-</div>
-</div>
-  </body>
-    
-</html>
+  <header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#" class="logo">Order-Delivery</a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Order-Delivery</a>
+
+          <button class="nav-close-btn" aria-label="Clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>
+              <span>About</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>
+              <span>Service</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>
+              <span>Blog</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>
+              <span>Contact</span>
+
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-contact">
+
+        <div>
+          <p class="contact-label">Free Call In India</p>
+
+          <a href="tel:12345678910" class="contact-number">+91 0123456789</a>
+        </div>
+
+        <div class="contact-icon">
+          <ion-icon name="call-outline"></ion-icon>
+        </div>
+
+      </div>
+
+      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+     
+        <!-- - Hero Section -->
+     
+
+      <section class="section hero" aria-label="home" id="home"
+        style="background-image: url('./assets/images/hero-banner.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h2 class="h1 hero-title">
+              <span class="span">To Every</span> Direction
+            </h2>
+
+            <p class="hero-text">
+              There are many variations of passages of worem Ipsum available, but the majority
+            </p>
+
+            <a href="#" class="btn-outline">View Services</a>
+
+            <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
+              class="hero-shape shape-1">
+
+            <img src="./assets/images/hero-shape.png" width="116" height="116" loading="lazy"
+              class="hero-shape shape-2">
+
+          </div>
+
+        </div>
+      </section>
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+
+    </html>
