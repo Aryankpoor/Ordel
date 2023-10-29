@@ -459,6 +459,38 @@ body {
   0% { transform: translateY(0); }
   100% { transform: translateY(20px); }
 }
+/* Newsletter Section */
+.newsletter { background-color: var(--dark-orange); }
+
+.newsletter .img-holder {
+  background-color: transparent;
+  margin-block-end: 20px;
+  max-width: max-content;
+}
+
+.newsletter .section-title { margin-block-end: 20px; }
+
+.email-field {
+  background-color: var(--white);
+  color: var(--eerie-black);
+  font-size: var(--fs-9);
+  height: 65px;
+  padding-inline: 20px;
+  margin-block-end: 10px;
+  outline: none;
+  transition: var(--transition);
+}
+
+.email-field:focus { box-shadow: 0 2px 2px hsla(0, 0%, 0%, 0.4); }
+
+.newsletter-btn {
+  background-color: var(--prussian-blue);
+  color: var(--white);
+  font-family: var(--ff-oswald);
+  font-weight: var(--fw-700);
+  padding: 8px 20px;
+}
+
 /* Back-to-top Button */
 
 .back-top-btn {
