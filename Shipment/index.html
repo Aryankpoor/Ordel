@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+   <title>Order-Delivery</title>
+   <style>
+    /* Add custom CSS for styling the tracking form */
+    .tracking-form {
+        width: 50%; /* Adjust the width as needed */
+        max-width: 100%; /* Set a maximum width if necessary */
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        
+    }
+
+    .tracking-form input[type="text"] {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 16px; /* Adjust font size as needed */
+    }
+
+    .tracking-form input[type="text"]::placeholder {
+        color: #999; /* Adjust placeholder text color */
+    }
+
+    .button.button--flex {
+        padding: 10px 20px; /* Adjust padding as needed */
+    }
+    @media (max-width: 768px) {
+    .tracking-form {
+        padding: 5px; /* Reduce padding on smaller screens */
+    }
+    .tracking-form input[type="text"] {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Responsive adjustments for even smaller screens */
+@media (max-width: 480px) {
+    .tracking-form {
+        border-radius: 0; /* Remove border radius on very small screens */
+    }
+}
+</style>
+</head>
+
+<body>
+   <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Order-Delivery</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="/Hacktoberfest/Order-delivery/Index.html" class="nav__link active-link">
+                            <em class="uil uil-estate nav__icon"></em> Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <em class="uil uil-user nav__icon"></em> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <em class="uil uil-file-alt nav__icon"></em> Product
+                        </a>
+                    </li>
+                    <!-- Feadback Form -->
+                    <!-- <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <em class="uil uil-message nav__icon"></em> Feadback
+                        </a>
+                    </li> -->
+                </ul>
+                <em class="uil uil-times nav__close" id="nav-close"></em>
+            </div>
+            <div class="nav__btns">
+<!-- Dark Mode -->
+                <!-- theme change button 
+                <em class="uil uil-moon change-theme" id="theme-button"></em>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <em class="uil uil-apps"></em> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <!-- Main -->
+    <main class="main">
+    <!-- Home -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://in.linkedin.com" aria-label="home icons" target="_blank"
+                            class="home__social-icon">
+                            <em class="uil uil-linkedin-alt"></em>
+                        </a>
+                        <a href="https://github.com" aria-label="home icons" target="_blank"
+                            class="home__social-icon">
+                            <em class="uil uil-github-alt"></em>
+                        </a>
+                        <a href="https://www.youtube.com" aria-label="home icons"
+                            target="_blank" class="home__social-icon">
+                            <em class="uil uil-youtube"></em>
+                        </a>
+                    </div>
+                    <div class="home__img">
+                        <svg class="home__blob" viewbox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image class="home__blob-img" href="./assets/img/perfil.webp" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="home__data">
+                        <h1 class="home__title">TO EVERY
+                            DIRECTION</h1>
+                        <h3 class="home__subtitle">There are many variations of passages of worem Ipsum available, but the majority</h3>
+                        <p class="home__discription">We Are Professional Logistics Agency</p>
+                        <div class="tracking-form">
+                            <input type="text" id="tracking-id" placeholder="Enter Tracking ID" required maxlength="20">
+                            <a href="#Track" class="button button--flex">
+                                Track<em class="uil uil-message button__icon"></em>
+                            </a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <em class="uil uil-mouse-alt home__scroll-mouse"></em>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <em class="uil uil-arrow-down"></em>
+                    </a>
+                </div>
+            </div>
+        </section>
+<!-- About -->
+        <section class="about section" id="about">
+            <h2 class="section__title">WHY CHOOSE US</h2>
+            <span class="section__subtitle">We Are Professional Logistics Agency</span>
+            <div class="about__container container grid">
+                <img src="./assets/img/about.jpg" alt="about" class="about__img">
+                <div class="about__data">
+                    <p class="about__description">
+                        There are many variations of passages of worem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                    </p>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">27+</span>
+                            <span class="about__info-name">Years <br> Trust</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">2000+</span>
+                            <span class="about__info-name">Completed <br> Services</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">150+</span>
+                            <span class="about__info-name">Branches <br> worked</span>
+                        </div>
+                    </div>
+                    <div class="about__buttons">
+                        <!-- Put Report Link Here -->
+                        <a href="" download class="button button--flex">
+                            Download Report<em class="uil uil-download-alt button__icon"></em>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+      <!-- Review -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Testimonials</h2>
+            <span class="section__subtitle">Most recent Services</span>
+
+            <div class="portfolio__container container swiper-container">
+                <div class="swiper-wrapper">
+                   <!-- Testimonials-1 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/hero-banner.jpg" alt="Service Image" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Abhisek Sharma</h3>
+                            <p class="portfolio__description">
+                                I am very happy with the service of Order-Delivery. I have been using it for the last 2 years. I have never had any problem with this service. I would like to thank the entire team of Order-Delivery for their service.
+                            </p>
+                            <!-- Put Report Link Here -->
+                            <a href="" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Report
+                                <em class="uil uil-arrow-right button__icon"></em>
+                            </a>
+                        </div>
+                    </div>
+                 <!-- Testimonials-2 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/hero-banner.jpg" alt="Service Image"
+                            class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Abhisek Sharma</h3>
+                            <p class="portfolio__description">
+                                I am very happy with the service of Order-Delivery. I have been using it for the last 2 years. I have never had any problem with this service. I would like to thank the entire team of Order-Delivery for their service.
+                            </p>
+                            <!-- Put Report Link Here -->
+                            <a href="" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Report
+                                <em class="uil uil-arrow-right button__icon"></em>
+                            </a>
+                        </div>
+                    </div>
+                 <!-- Testimonials-3 -->
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="./assets/img/hero-banner.jpg" alt="Service Image"
+                            class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">Abhisek Sharma</h3>
+                            <p class="portfolio__description">
+                                I am very happy with the service of Order-Delivery. I have been using it for the last 2 years. I have never had any problem with this service. I would like to thank the entire team of Order-Delivery for their service.
+                            </p>
+                            <!-- Put Report Link Here -->
+                            <a href="" target="_blank"
+                                class="button button--flex button--small portfolio__button">
+                                Report
+                                <em class="uil uil-arrow-right button__icon"></em>
+                            </a>
+                        </div>
+                    </div>
+                  
+                </div>
+
+                <div class="swiper-button-next">
+                    <em class="uil uil-angle-right-b swiper-portfolio-icon"></em>
+                </div>
+                <div class="swiper-button-prev">
+                    <em class="uil uil-angle-left-b swiper-portfolio-icon"></em>
+                </div>
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+
+
+<!-- Feadback Form -->
+        <!-- <section class="contact section" id="contact">
+            <h2 class="section__title">Feadback Form</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div class="align__middle">
+                    <div class="contact__information">
+                        <em class="uil uil-phone contact__icon"></em>
+                        <div>
+                            <h3 class="contact__title">Call Us</h3>
+                            <span class="contact__subtitle">+91 0123456789</span>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <em class="uil uil-envelope contact__icon"></em>
+                        <div>
+                            <h3 class="contact__title">Email 📩</h3>
+                            <a class="contact__subtitle"
+                                href="mailto:order-deliver@gmail.com">order-delivery@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact__information">
+                        <em class="uil uil-map-marker contact__icon"></em>
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">INDIA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content single__outline">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content single__outline">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                        <div class="contact__content single__outline">
+                            <label for="" class="contact__label">Service</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content single__outline">
+                            <label for="" class="contact__label">Feadback</label>
+                            <textarea name="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+                        <div class="align__middle">
+                            <a href="#" class="button button--flex">
+                                Submit Form
+                                <em class="uil uil-message button__icon"></em>
+                            </a>
+                        </div>
+                    </div>
+                    <button type="submit" style="display: none;">Submit</button>
+                </form>
+
+            </div>
+        </section>
+    </main> -->
+       
+   <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid large__footer">
+                <div class="footer__header">
+                    <h1 class="footer__title">Order-Delivery</h1>
+                    <span class="footer__subtitle">Transport</span>
+                </div>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#services" class="footer__link">Track</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Feadback</a>
+                    </li>
+                </ul>
+                <div class="footer__socials">
+                    <a href="https://in.linkedin.com" aria-label="footer links" target="_blank"
+                        class="footer__social">
+                        <em class="uil uil-linkedin"></em>
+                    </a>
+                    <!-- Put Links Here -->
+                    <a href="" aria-label="footer links" target="_blank"
+                        class="footer__social">
+                        <em class="uil uil-telegram-alt"></em>
+                    </a>
+                    <a href="https://github.com" aria-label="footer links" target="_blank"
+                        class="footer__social">
+                        <em class="uil uil-github-alt"></em>
+                    </a>
+                    <a href="https://www.youtube.com" aria-label="footer links"
+                        target="_blank" class="footer__social">
+                        <em class="uil uil-youtube"></em>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copy">Copyright &#169; 2023. All right reserved</p>
+        </div>
+    </footer>
+
+  <!-- Back-to-Top -->
+    <a href="#" class="scrollup" id="scroll-up" aria-label="scroll-up">
+        <em class="uil uil-arrow-up scrollup__icon"></em>
+    </a>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
